@@ -1,0 +1,104 @@
+{
+    "hash": "3937874074fe8e7dc1e8800162a4f425",
+    "packages": [
+        {
+            "name": "kriswallsmith/buzz",
+            "version": "v0.7",
+            "source": {
+                "type": "git",
+                "url": "http://github.com/kriswallsmith/Buzz.git",
+                "reference": "v0.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/kriswallsmith/Buzz/zipball/v0.7",
+                "reference": "v0.7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "suggest": {
+                "ext-curl": "*"
+            },
+            "time": "2012-06-25 12:01:38",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-0": {
+                    "Buzz": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kris Wallsmith",
+                    "email": "kris.wallsmith@gmail.com",
+                    "homepage": "http://kriswallsmith.net/"
+                }
+            ],
+            "description": "Lightweight HTTP client",
+            "homepage": "https://github.com/kriswallsmith/Buzz",
+            "keywords": [
+                "curl",
+                "http client"
+            ]
+        },
+        {
+            "name": "samson/youtrack",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "http://github.com/SamsonIT/YouTrack",
+                "reference": "e1c5b6e4373d09fa2e0bf1cd81a2713bfe286963"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/SamsonIT/YouTrack/archive/e1c5b6e4373d09fa2e0bf1cd81a2713bfe286963.zip",
+                "reference": "e1c5b6e4373d09fa2e0bf1cd81a2713bfe286963",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "kriswallsmith/buzz": "0.7.*"
+            },
+            "time": "2012-12-13 18:17:45",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "YouTrack": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bart van den Burg",
+                    "email": "bart@samson-it.nl",
+                    "homepage": "http://www.samson-it.nl",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Service to communicate with the YouTrack API",
+            "homepage": "http://github.com/SamsonIT/YouTrack",
+            "keywords": [
+                "api",
+                "youtrack"
+            ]
+        }
+    ],
+    "packages-dev": null,
+    "aliases": [
+
+    ],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "samson/youtrack": 20
+    }
+}

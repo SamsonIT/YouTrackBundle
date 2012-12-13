@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="samson_you_track.communicator.class">YouTrack\YouTrackCommunicator</parameter>
+        <parameter key="samson_you_track.browser_client.class">Buzz\Client\Curl</parameter>
+    </parameters>
+
+    <services>
+        <service id="samson_you_track.communicator" class="%samson_you_track.communicator.class%">
+            <argument type="service" id="samson_you_track.browser" />
+            <argument type="collection">%samson_you_track.communicator.options%</argument>
+        </service>
+
+        <service id="samson_you_track.browser" class="Buzz\Browser" public="false">
+            <argument type="service" id="samson_you_track.browser_client" />
+        </service>
+
+        <service id="samson_you_track.browser_client" class="%samson_you_track.browser_client.class%" public="false" />
+    </services>
+</container>
