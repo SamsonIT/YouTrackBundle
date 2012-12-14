@@ -12,7 +12,7 @@
     <services>
         <service id="samson_you_track.communicator" class="%samson_you_track.communicator.class%">
             <argument type="service" id="samson_you_track.browser" />
-            <argument type="collection">%samson_you_track.communicator.options%</argument>
+            <argument>%samson_you_track.communicator.options%</argument>
         </service>
 
         <service id="samson_you_track.browser" class="Buzz\Browser" public="false">
