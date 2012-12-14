@@ -19,6 +19,10 @@
             <argument type="service" id="samson_you_track.browser_client" />
         </service>
 
-        <service id="samson_you_track.browser_client" class="%samson_you_track.browser_client.class%" public="false" />
+        <service id="samson_you_track.browser_client" class="%samson_you_track.browser_client.class%" public="false">
+            <call method="setVerifyPeer">
+                <argument type="constant">false</argument>
+            </call>
+        </service>
     </services>
 </container>
